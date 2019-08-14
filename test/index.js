@@ -1,5 +1,5 @@
 const expect = require('expect')
-const ArrayList = require('../index')
+const ArrayList = require('../index.js')
 
 describe('Testing ArrayList',()=>{
 

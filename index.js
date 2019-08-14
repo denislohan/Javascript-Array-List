@@ -1,4 +1,5 @@
-const hash = require('object-hash')
+const hash = require('object-hash');
+
 class ArrayList {
     constructor(){
      this.size = 0
