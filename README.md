@@ -1,5 +1,4 @@
-How to install
-
+Javascript Array List
 For lovers of fortified data structures here is a version of a list [arrayList] that is well customised for a number of operations. It is built on top of the javascript array with the following fuctionalities.  
     a. adding at any index easily  
     b. removing at any index easily  
