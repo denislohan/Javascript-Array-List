@@ -77,14 +77,37 @@ it('should return a really index of an element it it exists',()=>{
 
 it('should know if an object in contained', ()=>{
     const data = {
-        description: "Endeavour to deliver this output not later than this date",
-        endTime: "2019-08-02T21:59:59Z",
-        location: "N/A",
-        startTime: "2019-08-02T21:59:59Z",
-        title: "Output 6.3: Advocating for your Advancement",
-    }
+        assignName: "Output 1.1: Understanding your business, mission, and operating structure", 
+        numofsub: null, 
+        submittedAt: null, 
+        score: null, 
+        isLate: false,
+        assignName: "Output 1.1: Understanding your business, mission, and operating structure",
+        due_date: "2019-08-29T15:00:00Z",
+        isLate: false,
+        numofsub: null,
+        score: null,
+        submittedAt: null
+    },
+    data_2 = {
+        assignName: "Output 1.1: Understanding your business, mission, and operating structure", 
+        numofsub: 2, 
+        submittedAt: "2019-05-27T18:49:04Z", 
+        score: 2, isLate: true, 
+        assignName: "Output 1.1: Understanding your business, mission, and operating structure",
+        due_date: "2019-04-21T15:00:00Z",
+        isLate: true,
+        numofsub: 2,
+        score: 2,
+        submittedAt: "2019-05-27T18:49:04Z"   
+
+}
+
+
     list.add(data)
+    expect(list.contains(data_2)).toBe(false)
     expect(list.contains(data)).toBe(true)
+
 })
 
 })

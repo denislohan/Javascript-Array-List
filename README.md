@@ -1,9 +1,6 @@
 How to install
 
-npm install arr_list
-yarn add arr_list
-
-For lovers of fortified datastructures here is a version a list [arrayList] that is well customised for a number of operations. It is built over javascript array with the following fuctionalities.  
+For lovers of fortified data structures here is a version of a list [arrayList] that is well customised for a number of operations. It is built on top of the javascript array with the following fuctionalities.  
     a. adding at any index easily  
     b. removing at any index easily  
     c. deleting a provided element with a number of its copies or not.  
