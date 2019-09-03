@@ -20,6 +20,14 @@ it('should add an element',()=>{
     expect(list.get(2)).toBe('el-3')
     expect(list.size).toBe(3)
 
+
+})
+it('should not change size if no element is added',()=>{
+    expect(list.size).toBe(3)
+    list.add()
+    expect(list.size).toBe(3)
+
+
 })
 
 it('should insert an element at a specific index',()=>{
@@ -52,7 +60,9 @@ it('should delete multiple elements when duplicated',()=>{
     list.add('el-x')
     list.add('el-x')
     list.add('el-x')
+    console.log('before  ', list)
     list.delete('el-x',3)
+    console.log('after ',list)
     expect(list.contains('el-x')).toBe(true)
     list.delete('el-x',1)
     expect(list.contains('el-x')).toBe(false)

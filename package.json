@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha",
     "coverage": "nyc mocha",
-    "coveralls": "npm run coverage -- --report lcovonly && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "cover": "istanbul cover _mocha"
   },
   "author": "Denis Niwemugisha",

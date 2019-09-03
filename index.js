@@ -1,14 +1,17 @@
 const hash = require('object-hash');
 
+
 class ArrayList {
     constructor(){
      this.size = 0
      this.arr=[]
     }
     add(el){
-        this.arr.push(el)
-        if(el)
+
+        if(el){
+            this.arr.push(el)
             this.size ++ 
+        }
     }
 
     insert(index,el){
@@ -30,19 +33,18 @@ class ArrayList {
     }
 
     delete(element,n){
-        if(!n && n==0)
+        if((!n && n==0) || n < 0 )
             return
         for(let i=0; i <  this.arr.length;i++){
             this.size--
             if (this.arr[i] === element){
                 this.arr.splice(i,1)
-                if(n>0){
                     n--
                     this.delete(element,n)
-                }
                 break
             }
         }
+        return
     }
 
     contains(el){
